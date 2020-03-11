@@ -15,6 +15,9 @@
 		352D1400241867D800A5EFC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352D13FE241867D800A5EFC9 /* LaunchScreen.storyboard */; };
 		352D140C24186D6300A5EFC9 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D140B24186D6300A5EFC9 /* ShoppingListTableViewController.swift */; };
 		352D140E24186F1300A5EFC9 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D140D24186F1300A5EFC9 /* ListController.swift */; };
+		352D14102418760400A5EFC9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D140F2418760400A5EFC9 /* CoreDataStack.swift */; };
+		352D14122418774E00A5EFC9 /* List+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D14112418774E00A5EFC9 /* List+Convenience.swift */; };
+		352D1416241878E500A5EFC9 /* CustomListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D1415241878E500A5EFC9 /* CustomListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		352D1401241867D800A5EFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		352D140B24186D6300A5EFC9 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		352D140D24186F1300A5EFC9 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		352D140F2418760400A5EFC9 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		352D14112418774E00A5EFC9 /* List+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Convenience.swift"; sourceTree = "<group>"; };
+		352D1415241878E500A5EFC9 /* CustomListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +90,8 @@
 		352D14082418680200A5EFC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				352D140D24186F1300A5EFC9 /* ListController.swift */,
+				352D140F2418760400A5EFC9 /* CoreDataStack.swift */,
+				352D14112418774E00A5EFC9 /* List+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,9 +107,27 @@
 		352D140A2418681200A5EFC9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				352D140B24186D6300A5EFC9 /* ShoppingListTableViewController.swift */,
+				352D14142418789200A5EFC9 /* View Controller */,
+				352D14132418788900A5EFC9 /* Model Controller */,
+				352D140D24186F1300A5EFC9 /* ListController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		352D14132418788900A5EFC9 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				352D1415241878E500A5EFC9 /* CustomListTableViewCell.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		352D14142418789200A5EFC9 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				352D140B24186D6300A5EFC9 /* ShoppingListTableViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +203,10 @@
 			files = (
 				352D13FB241867D700A5EFC9 /* ShoppingList2.xcdatamodeld in Sources */,
 				352D140E24186F1300A5EFC9 /* ListController.swift in Sources */,
+				352D1416241878E500A5EFC9 /* CustomListTableViewCell.swift in Sources */,
 				352D13F1241867D700A5EFC9 /* AppDelegate.swift in Sources */,
+				352D14122418774E00A5EFC9 /* List+Convenience.swift in Sources */,
+				352D14102418760400A5EFC9 /* CoreDataStack.swift in Sources */,
 				352D13F3241867D700A5EFC9 /* SceneDelegate.swift in Sources */,
 				352D140C24186D6300A5EFC9 /* ShoppingListTableViewController.swift in Sources */,
 			);
